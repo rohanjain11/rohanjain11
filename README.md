@@ -1,12 +1,15 @@
 <h1 align="center">Hi 👋, I'm Rohan Jain</h1>
 <h3 align="center">Exploring the World of Code: From Algorithms to Applications</h3>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=rohanjain11&label=Profile%20views&color=0e75b6&style=flat" alt="rohanjain11" /> </p>
+
 - 🔭 I’m currently working on **Football Analytics**
 
 - 📫 How to reach me **jainrohanj@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+<a href="https://linkedin.com/in/rohan-jain11" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rohan-jain11" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
