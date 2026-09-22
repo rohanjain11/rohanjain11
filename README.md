@@ -39,7 +39,7 @@ MS Data Science from CU Boulder (GPA 3.9/4.0, May 2026). I build LLM systems tha
 
 ## 🎓 Education
 
-**MS Data Science**, University of Colorado Boulder (GPA 3.9/4.0) &nbsp;|&nbsp; Aug 2024 to May 2026
+**MS Data Science**, University of Colorado Boulder (GPA 3.9/4.0) &nbsp;|&nbsp; Aug 2024 to May 2026<br/>
 **BE Computer Engineering**, Rajiv Gandhi Institute of Technology, Mumbai &nbsp;|&nbsp; Jul 2020 to May 2024
 
 ---
@@ -74,51 +74,51 @@ Building the production on-prem AI platform behind Bright Machines' manufacturin
 
 ## 🚀 Projects
 
-**[ResearchAgent](https://github.com/rohanjain11/agent-research-assistant)**, Multi-Agent Research Assistant &nbsp;|&nbsp; [live demo](https://rohanjain11.github.io/agent-research-assistant/)
-Four sequential agents (Researcher, Summarizer, Critic, Reporter) on LangChain and gpt-4o-mini behind a FastAPI backend that streams per-agent progress to a React UI over Server-Sent Events. Every LLM and tool call is logged as structured JSON, and the pipeline fails deliberately when sources are insufficient. About $0.01 to $0.05 per query.
+**[ResearchAgent](https://github.com/rohanjain11/agent-research-assistant)**, Multi-Agent Research Assistant &nbsp;|&nbsp; [live demo](https://rohanjain11.github.io/agent-research-assistant/)<br/>
+Four sequential agents (Researcher, Summarizer, Critic, Reporter) on LangChain and gpt-4o-mini behind a FastAPI backend that streams per-agent progress to a React UI over Server-Sent Events. Every LLM and tool call is logged as structured JSON, and the pipeline fails deliberately when sources are insufficient. About $0.01 to $0.05 per query.<br/>
 `Python` `LangChain` `FastAPI` `SSE` `ChromaDB` `React` `Tailwind`
 
-**[RoboDocs](https://github.com/rohanjain11/robotics-manual-rag)**, Robotics Manual RAG &nbsp;|&nbsp; [live demo](https://rohanjain11.github.io/robotics-manual-rag/)
-Cited Q&A over about 10 Universal Robots manuals (~3,870 chunks) indexed in Pinecone serverless. Answers carry document and page citations, section-type filters, and safety callouts, with an explicit fallback when the manuals lack an answer. Ingest under $0.50, queries under $0.01.
+**[RoboDocs](https://github.com/rohanjain11/robotics-manual-rag)**, Robotics Manual RAG &nbsp;|&nbsp; [live demo](https://rohanjain11.github.io/robotics-manual-rag/)<br/>
+Cited Q&A over about 10 Universal Robots manuals (~3,870 chunks) indexed in Pinecone serverless. Answers carry document and page citations, section-type filters, and safety callouts, with an explicit fallback when the manuals lack an answer. Ingest under $0.50, queries under $0.01.<br/>
 `Python` `FastAPI` `OpenAI Embeddings` `Pinecone` `React` `Tailwind`
 
-**[Flan-T5 QLoRA Fine-Tune](https://github.com/rohanjain11/llm-finetune-qlora)** &nbsp;|&nbsp; [adapter on Hugging Face](https://huggingface.co/rohanjain11/flan-t5-mlds-qlora)
-QLoRA (8-bit, LoRA rank 16 on attention) on flan-t5-base over a 360-example synthetic QA set generated with gpt-4o-mini. ROUGE-L went from 0.1637 to 0.2058, a 25.7% gain, in 2.2 minutes on a free T4. Diagnosed an fp16 failure (zero training loss, NaN validation) and trained the adapters in fp32.
+**[Flan-T5 QLoRA Fine-Tune](https://github.com/rohanjain11/llm-finetune-qlora)** &nbsp;|&nbsp; [adapter on Hugging Face](https://huggingface.co/rohanjain11/flan-t5-mlds-qlora)<br/>
+QLoRA (8-bit, LoRA rank 16 on attention) on flan-t5-base over a 360-example synthetic QA set generated with gpt-4o-mini. ROUGE-L went from 0.1637 to 0.2058, a 25.7% gain, in 2.2 minutes on a free T4. Diagnosed an fp16 failure (zero training loss, NaN validation) and trained the adapters in fp32.<br/>
 `PyTorch` `Hugging Face` `PEFT / QLoRA` `Colab T4` `ROUGE`
 
-**[PyTorch Model Serving on Kubernetes](https://github.com/rohanjain11/pytorch-k8s-serving)**
-ResNet18 (92.78%) and a BiLSTM (88.62%) served with FastAPI on Minikube, with canary routing by model version. A Horizontal Pod Autoscaler set to 2 to 6 replicas on 50% CPU scaled 2 to 6 pods under a 30-user Locust test. Prometheus metrics and a Grafana dashboard cover request rate, p50/p95 latency and traffic split.
+**[PyTorch Model Serving on Kubernetes](https://github.com/rohanjain11/pytorch-k8s-serving)**<br/>
+ResNet18 (92.78%) and a BiLSTM (88.62%) served with FastAPI on Minikube, with canary routing by model version. A Horizontal Pod Autoscaler set to 2 to 6 replicas on 50% CPU scaled 2 to 6 pods under a 30-user Locust test. Prometheus metrics and a Grafana dashboard cover request rate, p50/p95 latency and traffic split.<br/>
 `PyTorch` `FastAPI` `Docker` `Kubernetes` `HPA` `Locust` `Prometheus` `Grafana`
 
-**[ClaimPilot AI](https://github.com/rohanjain11/claimpilot-ai)**, Guardrailed Tool-Calling Agent
-Deterministic Pydantic v2 checks surface claim issues, then OpenAI function calling proposes structured fixes strictly scoped to what those checks found, so the model cannot invent problems. Strict output schemas with retry and fallback guarantee a valid report even when the model fails.
+**[ClaimPilot AI](https://github.com/rohanjain11/claimpilot-ai)**, Guardrailed Tool-Calling Agent<br/>
+Deterministic Pydantic v2 checks surface claim issues, then OpenAI function calling proposes structured fixes strictly scoped to what those checks found, so the model cannot invent problems. Strict output schemas with retry and fallback guarantee a valid report even when the model fails.<br/>
 `Python` `Pydantic v2` `OpenAI Function Calling` `Streamlit` `pytest`
 
-**[AgentSquared](https://github.com/rohanjain11/AgentSquared)**, No-Code AI Agent Builder *(HackCU 12)*
-Config-driven platform to build AI business agents in under 60 seconds. Two modes: RAG-powered customer support, and real-time Bluesky brand monitoring with Gemini sentiment classification and human-approved threaded replies. Every agent is a DB row plus JSON config, so a new agent type is a new prompt template rather than new code.
+**[AgentSquared](https://github.com/rohanjain11/AgentSquared)**, No-Code AI Agent Builder *(HackCU 12)*<br/>
+Config-driven platform to build AI business agents in under 60 seconds. Two modes: RAG-powered customer support, and real-time Bluesky brand monitoring with Gemini sentiment classification and human-approved threaded replies. Every agent is a DB row plus JSON config, so a new agent type is a new prompt template rather than new code.<br/>
 `Python` `FastAPI` `Google Gemini API` `RAG` `Next.js` `SQLite` `Bluesky AT Protocol`
 
-**[MLflow Weather Benchmark](https://github.com/rohanjain11/mlflow-weather-benchmark)**
-Five regression models per target trained on live Open-Meteo data, with every run logged to MLflow. An automated quality gate rejects any model failing to beat a mean-prediction baseline; the best models improved MAE by 84.8% on temperature and 79.8% on humidity. CI runs a live-data smoke test on every push.
+**[MLflow Weather Benchmark](https://github.com/rohanjain11/mlflow-weather-benchmark)**<br/>
+Five regression models per target trained on live Open-Meteo data, with every run logged to MLflow. An automated quality gate rejects any model failing to beat a mean-prediction baseline; the best models improved MAE by 84.8% on temperature and 79.8% on humidity. CI runs a live-data smoke test on every push.<br/>
 `Python` `scikit-learn` `XGBoost` `MLflow` `GitHub Actions`
 
-**[SafeRide](https://github.com/Simrann020/Saferide)**, Risk-Aware Geospatial Routing API
-Crash-aware route ranking for driving, cycling, and walking. OSRM alternatives scored via PostGIS spatial joins against crash and 311 hazard datasets. Deployed serverlessly on AWS Lambda and API Gateway with RDS.
+**[SafeRide](https://github.com/Simrann020/Saferide)**, Risk-Aware Geospatial Routing API<br/>
+Crash-aware route ranking for driving, cycling, and walking. OSRM alternatives scored via PostGIS spatial joins against crash and 311 hazard datasets. Deployed serverlessly on AWS Lambda and API Gateway with RDS.<br/>
 `Python` `FastAPI` `PostgreSQL` `PostGIS` `GeoPandas` `AWS Lambda` `Docker`
 
-**[AI PDF Chatbot](https://github.com/rohanjain11/AI-PDF-ChatBot)**, RAG Document Q&A
-Full-stack RAG pipeline: OCR ingestion, LangChain chunking, FAISS similarity search, GPT-4 answers. Embedding caching, configurable retrieval parameters, usage logging. Deployed on Vercel.
+**[AI PDF Chatbot](https://github.com/rohanjain11/AI-PDF-ChatBot)**, RAG Document Q&A<br/>
+Full-stack RAG pipeline: OCR ingestion, LangChain chunking, FAISS similarity search, GPT-4 answers. Embedding caching, configurable retrieval parameters, usage logging. Deployed on Vercel.<br/>
 `Python` `FastAPI` `LangChain` `FAISS` `OpenAI GPT-4` `React.js`
 
-**[Denver Airport Analytics Dashboard](https://github.com/rohanjain11/Denver-Airport-Dashboard)**, Hackathon 3rd Place
-Integrated ServiceNow and Azure DevOps data, then built dual Power BI dashboards with drill-downs for SLA, queue times, and bottlenecks. Reduced manual reporting by 40%.
+**[Denver Airport Analytics Dashboard](https://github.com/rohanjain11/Denver-Airport-Dashboard)**, Hackathon 3rd Place<br/>
+Integrated ServiceNow and Azure DevOps data, then built dual Power BI dashboards with drill-downs for SLA, queue times, and bottlenecks. Reduced manual reporting by 40%.<br/>
 `Python` `Power BI` `Tableau` `Power Query` `pandas`
 
 ---
 
 ## 📄 Publication
 
-**Yoga Posture Detection and Correction**, peer-reviewed research paper. TensorFlow/Keras pose classification achieving 96.5% accuracy with real-time corrective feedback.
+**Yoga Posture Detection and Correction**, peer-reviewed research paper. TensorFlow/Keras pose classification achieving 96.5% accuracy with real-time corrective feedback.<br/>
 [View Publication](https://journals.stmjournals.com/joosdt/article=2024/view=161704/)
 
 ---
