@@ -2,7 +2,7 @@
 
 MS Data Science from CU Boulder (GPA 3.9/4.0, May 2026). I build LLM systems that hold up in production, not just in demos: agents, MCP tool servers, retrieval, and the evaluation harnesses and guardrails that make them trustworthy.
 
-📍 San Francisco, CA &nbsp;|&nbsp; 📧 jainrohanj@gmail.com &nbsp;|&nbsp; 🌐 [LinkedIn](https://www.linkedin.com/in/rohan-jain11) &nbsp;|&nbsp; 🖥 [Portfolio](https://rohanjain11.github.io/Rohan-Jain)
+📍 San Francisco, CA &nbsp;|&nbsp; 📧 jainrohanj@gmail.com &nbsp;|&nbsp; 🌐 [LinkedIn](https://www.linkedin.com/in/rohan-jain11) &nbsp;|&nbsp; 🖥 [Portfolio](https://rohanjain.me)
 
 ---
 
